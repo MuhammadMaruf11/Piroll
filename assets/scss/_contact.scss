@@ -1,0 +1,71 @@
+@use "common" as *;
+
+.contact-area{
+    padding: 100px 255px;
+    @include mq (lg) {
+        padding: 100px 180px;
+    }
+    @include mq (md) {
+        padding: 70px 60px;
+    }
+    @include mq (xs) {
+        padding: 40px 10px;
+    }
+}
+
+.contact-form{
+    margin-top: 10px;
+    form{
+        input{
+            color: #787878!important;
+            font-size: 15px;
+            font-weight: 500;
+            font-family: 'Nunito', sans-serif ;
+            width: 100%;
+            background: #fff;
+            border: none;
+            outline: none;
+            margin-right: 30px;
+            margin-bottom: 30px;
+            padding: 20px;
+            &::placeholder{
+                color: #787878;
+            }
+            &:last-child{
+                margin-right: 0;
+            }
+        }
+        textarea{
+            background: #fff;
+            border: none;
+            outline: none;
+            width: 100%;
+            padding: 20px;
+            color: #787878;
+            margin-bottom: 30px;
+            &::placeholder{
+                color: #787878;
+            }
+        }
+        button{
+            outline: none;
+            border: none;
+            display: block;
+            background: #10c9c3;
+            text-transform: uppercase;
+            color: #fff;
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            padding: 22px 35px;
+            margin: 0 auto ;
+            &:hover{
+                color: #000;
+            }
+            @include mq (xs) {
+                font-size: 18px;
+                padding: 10px 15px;
+            }
+        }
+    }
+}

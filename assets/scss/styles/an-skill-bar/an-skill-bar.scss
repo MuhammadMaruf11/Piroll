@@ -1,0 +1,46 @@
+@import "config", "mixins";
+
+.skillbar {
+  width: 100%;
+  margin: 70px 0;
+  &:last-child{
+    margin: 0;
+  }
+  position: relative;
+  display: block;
+  height: 3px;
+  background-color: #d8d8d8;
+  border-radius: 5px 0 0 5px;
+  @include skill-color;
+
+  .title {
+    font-size: 12px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    height: 30px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: #000;
+    z-index: 9;
+    border-radius: 5px 0 0 5px;
+    span{
+      margin-left: 18px;
+    }
+  }
+
+  
+
+  .filled {
+    z-index: 8;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #10c9c3;
+    height: 3px;
+    width: 20px;
+    border-radius: 5px 0 0 5px;
+  }
+}

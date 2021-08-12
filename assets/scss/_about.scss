@@ -1,0 +1,22 @@
+@use "common" as *;
+
+.about-area{
+    .section-title{
+        .description{
+            padding: 0 345px;
+            font-size: 16px;
+            @include mq(xl){
+                padding: 0 260px;
+            }
+            @include mq(lg){
+                padding: 0 170px;
+            }
+            @include mq(md){
+                padding: 0 80px;
+            }
+            @include mq(xs){
+                padding: 0 12px;
+            }
+        }
+    }
+}

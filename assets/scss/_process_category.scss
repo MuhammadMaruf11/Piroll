@@ -1,0 +1,125 @@
+@use "common" as *;
+
+.work-process-area{
+    .section-title{
+        .description{
+            padding: 0 390px;
+            font-size: 16px;
+            @include mq(xl){
+                padding: 0 300px;
+            }
+            @include mq(lg){
+                padding: 0 210px;
+            }
+            @include mq(md){
+                padding: 0 90px;
+            }
+            @include mq(xs){
+                padding: 0 12px;
+            }
+        }
+    }
+}
+
+.video-wrapper {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 570px;
+    margin-top: 15px;
+    position: relative;
+    @include mq(lg){
+        min-height: 525px;
+    }
+    @include mq(md){
+        min-height: 390px;
+    }
+    @include mq(xs){
+        min-height: 165px;
+    }
+    .video-wrap{
+        a{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            border-radius: 50%;
+            border: none;
+            outline: none;
+            background: #10c9c3;
+            text-align: center;
+            height: 85px;
+            width: 85px;
+            line-height: 85px;
+            @include mq(xs) {
+                height: 40px;
+                width: 40px;
+                line-height: 40px;
+            }
+            &:hover{
+                background: #fff;
+                i{
+                    color: #10c9c3;
+                }
+            }
+            i{
+                color: #fff;
+                @include mq (xs) {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
+
+.category-area{
+    @include mq (md) {
+        padding: 70px 0 40px;
+    }
+    @include mq (xs) {
+        padding: 30px 0 10px;
+    }
+    .category-items{
+        .category-icon{
+            margin-bottom: 30px;
+            @include mq (xs) {
+                margin: 0;
+            }
+            img{
+                @include mq (xs) {
+                    max-width: 10%;
+                }
+            }
+        }
+        .category-text{
+            .titile{
+                a{
+                    font-size: 12px;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    font-family: 'Montserrat', sans-serif;
+                    color: #191919;
+                    letter-spacing: 1px;
+                    margin-bottom: 20px;
+                    @include mq(xs){
+                        letter-spacing: 0;
+                    }
+                    &:hover{
+                        color: #10c9c3;
+                    }
+                }
+            }
+            .description{
+                font-size: 18px;
+                font-weight: 500;
+                font-family: 'Nunito', sans-serif;
+                color: #787878;
+                margin-bottom: 60px;
+                @include mq(xs){
+                    font-size: 14px;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}

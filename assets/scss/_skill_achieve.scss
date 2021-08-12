@@ -1,0 +1,61 @@
+@use "common" as *;
+
+.skill-area{
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    min-height: 570px;
+    .skill-wrap{
+        title{
+            color: #171717;
+            font-size: 30px;
+            font-weight: 700;
+        }
+    }
+}
+
+.achievements-area{
+    @include  mq(md){
+        padding: 70px 0;
+    }
+    @include  mq(xs){
+        padding: 40px 0;
+    }
+    .achievements-wrap{
+        display: flex;
+        margin-bottom: 30px;
+        .counter-icon{
+            align-items: center;
+            float: left;
+            margin-right: 25px;
+            line-height: 60px;
+            @include mq (xs) {
+                margin-right: 5px;
+            }
+        }
+        .counter-wrap{
+            float: right;
+            h3{
+                margin: 0;
+                padding: 0;
+                span{
+                    color: #fff;
+                    font-size: 18px;
+                    font-weight: 600;
+                    @include mq(xs){
+                        font-size: 14px;
+                    }
+                }
+            }
+            span{
+                color: #fff;
+                font-size: 12px;
+                font-weight: 500;
+                text-transform: uppercase;
+                @include mq (xs){
+                    font-size: 8px;
+                }
+            }
+        }
+    }
+}

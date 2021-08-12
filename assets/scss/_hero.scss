@@ -1,0 +1,58 @@
+@use "common" as *;
+
+.hero-area{
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  min-height: 675px;
+}
+
+.hero-text{
+  float: right;
+  padding: 235px 0;
+  margin-left: 65px;
+  @include mq(md){
+    margin: 0;
+  }
+  @include mq(xs){
+    margin: 0;
+  }
+}
+
+.section-title{
+  .title{
+    color: #1d1d1d;
+    font-size: 38px;
+    font-weight: 600;
+    margin-bottom: 35px;
+    @include mq(xs){
+      font-size: 32px;
+    }
+  }
+  .description{
+    font-size: 18px;
+    font-family: $nunito;
+    margin-bottom: 40px;
+    @include mq (xs){
+      font-size: 14px;
+    }
+  }
+  .theme-btn{
+    display: inline-block;
+    background: #10c9c3;
+    padding: 20px 45px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: $mont;
+    letter-spacing: 1px;
+    &:hover{
+      color: #191919;
+    }
+    @include mq(xs){
+      padding: 10px 20px;
+      font-size: 15px;
+    }
+  }
+}

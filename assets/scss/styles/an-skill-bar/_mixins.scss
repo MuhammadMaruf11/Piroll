@@ -1,0 +1,13 @@
+@mixin background ($color) {
+  .filled {
+    background-color: #10c9c3;
+  }
+}
+
+@mixin skill-color {
+  @each $i in $item-color {
+    &.#{nth($i,1)} {
+      @include background(nth($i,2));
+    }
+  }
+}

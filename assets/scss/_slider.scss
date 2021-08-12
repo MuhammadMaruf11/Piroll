@@ -1,0 +1,90 @@
+@use "common" as *;
+
+.slider-active-wrap{
+    position: relative;
+    padding: 180px 0;
+    @include mq(lg) {
+        padding: 150px 0;
+    }
+    @include mq(md) {
+        padding: 120px 0;
+    }
+    @include mq(xs) {
+        padding: 60px 0;
+    }
+    .slider-content{
+        .sub-title{
+            padding: 0 240px;
+            display: block;
+            font-size: 24px;
+            font-weight: 500;
+            color: #fff;
+            @include mq (lg) {
+                font-size: 20px;
+                padding: 0 130px;
+            }
+            @include mq (md) {
+                font-size: 22px;
+                padding: 0 80px;
+            }
+            @include mq (xs) {
+                padding: 0 20px;
+                font-size: 14px;
+            }
+        }
+        .profile-name{
+            display: block;
+            font-size: 12px;
+            font-weight: 500;
+            color: #fff;
+            text-transform: uppercase;
+            margin: 0;
+            &:hover{
+                color: #191919;
+            }
+        }
+    }
+}
+
+
+.swiper-pagination{
+    position: absolute;
+    bottom: 60px;
+    top: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    @include mq(xs) {
+        bottom: 20px;
+    }
+}
+
+.swiper-pagination-bullet{
+    margin-right: 10px;
+    height: 5px;
+    width: 5px;
+    background: #b0e8e6;
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active{
+    height: 10px;
+    width: 10px;
+    background: #fff;
+    margin-bottom: -2.5px;
+}
+
+
+
+.award-img{
+    a{
+        img{
+            opacity: 0.5;
+            transition: all 0.3s linear 0s;
+        }
+        &:hover{
+            img{
+                opacity: 1;
+            }
+        }
+    }
+}
